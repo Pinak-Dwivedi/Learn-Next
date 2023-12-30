@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# LEARN-NEXT
 
-## Getting Started
+## Intro
 
-First, run the development server:
+Hi! I am Pinak Dwivedi. I have created this web service with Next.js, MongoDB.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## About This Repo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Learn-Next is a web application made with Next.js. I have implemented Next.js concepts like SSR, CSR, Server Side Data Fetching, Client Side Data Fetching, middleware, app router, route handlers, Server Components, Client Components and so on. Also I have implemented Zod validation, Dark And Light Mode support and so on.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Tech Set
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Next.js
+2. MongoDB.
+3. Redux.
+4. React Query.
+5. TailwindCSS.
+6. Zod.
 
-## Learn More
+## Service Is LIVE At
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+https://pinak-dwivedi.github.io/ShopppItOn/
