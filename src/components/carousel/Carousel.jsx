@@ -92,7 +92,7 @@ export default function Carousel() {
               fill
               sizes="100"
               priority
-              alt={`carousel${i + 1}`}
+              alt="carousel slide"
               className="h-full w-full object-cover"
             />
           </div>

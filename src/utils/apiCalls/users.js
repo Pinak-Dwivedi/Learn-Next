@@ -123,6 +123,7 @@ export async function forgotPassword(userData) {
   const res = await fetch(`/api/users/forgot-password`, {
     method: "POST",
     credentials: "include",
+    cache: "no-store",
     headers: {
       "Content-Type": "application/json",
     },
@@ -140,6 +141,7 @@ export async function resetPassword(userData) {
   const res = await fetch(`/api/users/reset-password/${token}`, {
     method: "PUT",
     credentials: "include",
+    cache: "no-store",
     headers: {
       "Content-Type": "application/json",
     },

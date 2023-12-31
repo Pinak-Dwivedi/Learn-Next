@@ -82,6 +82,7 @@ export async function createPost(postData) {
       "Content-Type": "application/json",
     },
     credentials: "include",
+    cache: "no-store",
     body: JSON.stringify({
       title,
       description,
@@ -102,6 +103,7 @@ export async function updatePost(postData) {
       "Content-Type": "application/json",
     },
     credentials: "include",
+    cache: "no-store",
     body: JSON.stringify({
       title,
       description,
