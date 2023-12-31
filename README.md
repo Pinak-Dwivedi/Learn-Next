@@ -19,4 +19,4 @@ Learn-Next is a web application made with Next.js. I have implemented Next.js co
 
 ## Service Is LIVE At
 
-https://pinak-dwivedi.github.io/ShopppItOn/
+https://learn-next-pinak-dwivedi.vercel.app/
