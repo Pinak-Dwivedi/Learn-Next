@@ -1,5 +1,4 @@
 import { cookies } from "next/headers";
-
 import { getUserInfo } from "@/utils/apiCalls/users";
 import LinksList from "./LinksList";
 import ThemeSwitcher from "../themeSwitcher/ThemeSwitcher";
@@ -10,15 +9,6 @@ import SetAuthClient from "./SetAuthClient";
 
 export default async function Header() {
   const data = await getUserInfo(cookies());
-
-  let authState = false;
-  let isAdmin = false;
-
-  if (data?.success) {
-    authState = true;
-
-    if (data?.user?.role === "admin") isAdmin = true;
-  }
 
   return (
     <header className="">
@@ -38,7 +28,7 @@ export default async function Header() {
 
         {data?.user != null && <SetAuthClient user={data?.user} />}
 
-        <LinksList authState={authState} isAdmin={isAdmin} />
+        <LinksList />
       </nav>
     </header>
   );

@@ -1,4 +1,5 @@
 "use client";
+
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { setUser } from "@/redux/slices/userSlice";
@@ -9,6 +10,8 @@ export default function SetAuthClient({ user }) {
   useEffect(() => {
     if (user != null) {
       dispatch(setUser(user));
+    } else {
+      dispatch(setUser(null));
     }
   }, []);
 

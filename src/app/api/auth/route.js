@@ -2,6 +2,7 @@ import { checkIfAuthenticated } from "@/middlewares/authentication";
 import asyncRouteHandlerWrapper from "@/utils/asyncRouteHandlerWrapper";
 import UsersModel from "@/models/UsersModel";
 import connectToDb from "@/config/database";
+import CustomError from "@/utils/CustomError";
 
 export const GET = asyncRouteHandlerWrapper(async (req, { params }) => {
   // check if authenticated

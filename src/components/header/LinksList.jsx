@@ -1,19 +1,40 @@
 "use client";
-
 import { useState } from "react";
 import LinkWrapper from "./LinkWrapper";
 import Logout from "./Logout";
 import Hamburger from "./Hamburger";
+import { useSelector } from "react-redux";
 
-export default function LinksList({ authState, isAdmin }) {
+export default function LinksList() {
   const [navOpen, setNavOpen] = useState(false);
+
+  const { user } = useSelector((state) => state.user);
+
+  const authState = user?.name != null ? true : false;
+  const isAdmin = user?.role === "admin" || false;
 
   const navigationLinks = [
     { url: "/about", label: "About" },
-    { url: "/admin/dashboard", label: "Dashboard", authState: isAdmin },
-    { url: "/posts", label: "Posts", authState },
-    { url: "/posts/me", label: "My Posts", authState },
-    { url: "/myprofile", label: "My Profile", authState },
+    {
+      url: "/admin/dashboard",
+      label: "Dashboard",
+      authState: isAdmin,
+    },
+    {
+      url: "/posts",
+      label: "Posts",
+      authState,
+    },
+    {
+      url: "/posts/me",
+      label: "My Posts",
+      authState,
+    },
+    {
+      url: "/myprofile",
+      label: "My Profile",
+      authState,
+    },
     { url: "/login", label: "SignIn" },
   ];
 
